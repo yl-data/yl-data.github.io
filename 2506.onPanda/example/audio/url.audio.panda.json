@@ -1,0 +1,21 @@
+{
+  "dialogs": {
+    "1": {
+      "messages": [
+        {
+          "role": "user",
+          "content": [{ 
+              "type": "audio_url", 
+              "audio_url": { 
+                "url": "http://out.diyer22.com:9000/on-panda-example/audio/mp3/common_saying_small.mp3", 
+                "format": "mp3" 
+              }
+          }]
+        }
+      ],
+      "annotate": {
+        "is_good": null
+      }
+    }
+  }
+}

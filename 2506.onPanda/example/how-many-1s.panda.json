@@ -1,0 +1,195 @@
+{
+  "dialogs": {
+    "1": {
+      "messages": [
+        {
+          "role": "system",
+          "content": ""
+        },
+        {
+          "role": "user",
+          "content": "How many 1 in 01011010101111011011?",
+          "description": "Answer is 13"
+        },
+        {
+          "role": "assistant",
+          "content": "Let's split the binary number 01011010101111011011 into individual digits:\n\n0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1\n\nNow, let's count the number of 1s in this sequence:\n\nThere are 11 ones in total.",
+          "finish_reason": "stop"
+        }
+      ],
+      "operations": [
+        {
+          "time": 1735112058669,
+          "parent": 1,
+          "chat_config": {
+            "model": "dira-step2-ppo-2302-b2303-r2302-d2302-lr08-int4",
+            "max_tokens": 1024,
+            "temperature": 0.5
+          },
+          "is_prompt_modified": false,
+          "is_response_modified": false,
+          "response_modified_type": "no_response",
+          "common_prefix_length": -1,
+          "operator": "new_generate",
+          "is_new_generated": true,
+          "on_policy": true
+        }
+      ],
+      "annotate": {
+        "is_good": null
+      }
+    },
+    "2": {
+      "messages": [
+        {
+          "role": "system",
+          "content": ""
+        },
+        {
+          "role": "user",
+          "content": "How many 1 in 01011010101111011011?",
+          "description": "Answer is 13"
+        },
+        {
+          "role": "assistant",
+          "content": "Let's split the binary number 01011010101111011011 into groups of 4 bits for clarity:\n\n0101 1010 1011 1101 1011\n\nNow, let's count the number of 1s in each group:\n\n0101: 2 ones\n1010: 2 ones\n1011: 3 ones\n1101: 3 ones\n1011: 3 ones\n\nAdding them up:\n2 + 2 + 3 + 3 + 3 = 13\n\nSo, there are 13 ones in the binary number 01011010101111011011.",
+          "finish_reason": "stop"
+        }
+      ],
+      "operations": [
+        {
+          "time": 1735112075417,
+          "parent": 1,
+          "chat_config": {
+            "model": "dira-step2-ppo-2302-b2303-r2302-d2302-lr08-int4",
+            "max_tokens": 1024,
+            "temperature": 0.5
+          },
+          "is_prompt_modified": false,
+          "is_response_modified": true,
+          "response_modified_type": "bifurcation",
+          "common_prefix_length": 56,
+          "operator": "continue_with_chosen",
+          "on_policy": true
+        }
+      ],
+      "annotate": {
+        "is_good": true
+      }
+    },
+    "3": {
+      "messages": [
+        {
+          "role": "system",
+          "content": ""
+        },
+        {
+          "role": "user",
+          "content": "How many 1 in 0101101010111101101111?",
+          "description": "Answer is 13"
+        },
+        {
+          "role": "assistant",
+          "content": "Let's split the binary number 01011010101111011011 into groups of 4 bits for clarity:\n\n0101 1010 1011 1101 1011\n\nNow, let's count the number of 1s in each group:\n\n0101: 2 ones\n1010: 2 ones\n1011: 3 ones\n1101: 3 ones\n1011: 3 ones\n\nAdding them up:\n2 + 2 + 3 + 3 + 3 = 13\n\nSo, there are 13 ones in the binary number 01011010101111011011.",
+          "finish_reason": "stop"
+        }
+      ],
+      "operations": [
+        {
+          "time": 1735112161740,
+          "parent": 2,
+          "is_prompt_modified": true,
+          "is_response_modified": false,
+          "response_modified_type": "same",
+          "common_prefix_length": 333,
+          "operator": "edit_prompt",
+          "on_policy": false
+        }
+      ],
+      "annotate": {
+        "is_good": false
+      }
+    },
+    "4": {
+      "messages": [
+        {
+          "role": "system",
+          "content": ""
+        },
+        {
+          "role": "user",
+          "content": "How many 1 in 0101101010111101101111?",
+          "description": "Answer is 13"
+        },
+        {
+          "role": "assistant",
+          "content": "Let's split the binary number 0101101010111101101111 into individual digits:\n\n0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1\n"
+        }
+      ],
+      "operations": [
+        {
+          "time": 1735112161824,
+          "parent": 3,
+          "chat_config": {
+            "model": "dira-step2-ppo-2302-b2303-r2302-d2302-lr08-int4",
+            "max_tokens": 1024,
+            "temperature": 0.5
+          },
+          "is_prompt_modified": false,
+          "is_response_modified": true,
+          "response_modified_type": "delete_response",
+          "common_prefix_length": -1,
+          "operator": "new_generate",
+          "is_new_generated": true,
+          "on_policy": true
+        }
+      ],
+      "annotate": {
+        "is_good": false
+      }
+    },
+    "5": {
+      "messages": [
+        {
+          "role": "system",
+          "content": ""
+        },
+        {
+          "role": "user",
+          "content": "How many 1 in 0101101010111101101111?",
+          "description": "Answer is 13"
+        },
+        {
+          "role": "assistant",
+          "content": "Let's split the binary number 0101101010111101101111 into groups of 4 bits for easier reading:\n\n0101 1010 1011 1101 1011 11\n\nNow, let's count the number of 1's in each group:\n\n- 0101: 2 ones\n- 1010: 2 ones\n- 1011: 3 ones\n- 1101: 3 ones\n- 1011: 3 ones\n- 11: 2 ones\n\nAdding them up:\n\n2 + 2 + 3 + 3 + 3 + 2 = 15\n\nSo, there are 15 ones in the binary number 0101101010111101101111.",
+          "finish_reason": "stop"
+        }
+      ],
+      "operations": [
+        {
+          "time": 1735112168231,
+          "parent": 4,
+          "chat_config": {
+            "model": "dira-step2-ppo-2302-b2303-r2302-d2302-lr08-int4",
+            "max_tokens": 1024,
+            "temperature": 0.5
+          },
+          "is_prompt_modified": false,
+          "is_response_modified": true,
+          "response_modified_type": "bifurcation",
+          "common_prefix_length": 58,
+          "operator": "continue_with_chosen",
+          "on_policy": true
+        }
+      ],
+      "annotate": {
+        "is_good": true
+      }
+    }
+  },
+  "version": "1.0",
+  "uuid": "2024-12-25_15-34-18.669",
+  "hash_map": {},
+  "deleted_dialogs": {},
+  "update_time": 1735112340684
+}

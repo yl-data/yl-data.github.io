@@ -1,0 +1,171 @@
+{
+  "dialogs": {
+    "1": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "写藏头诗：\n人工智能，大有可为"
+        },
+        {
+          "role": "assistant",
+          "content": "**人**间智慧汇其中，  \n**工**巧奇思妙无穷，  \n**智**识未来谁可比，  \n**能**创辉煌大有为。",
+          "finish_reason": "stop"
+        }
+      ],
+      "operations": [
+        {
+          "time": 1744387844540,
+          "parent": "1",
+          "chat_config": {
+            "model": "toc-prod-data-produce-step2-ppo-2302-b2303-r2302-1205",
+            "max_tokens": 3072,
+            "temperature": 0.5
+          },
+          "is_prompt_modified": false,
+          "is_response_modified": false,
+          "response_modified_type": "no_response",
+          "common_prefix_length": -1,
+          "operator": "generate_new",
+          "is_new_generated": true,
+          "on_policy": true
+        }
+      ],
+      "annotate": {
+        "is_good": null
+      }
+    },
+    "2": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "写藏头诗：\n人工智能，大有可为"
+        },
+        {
+          "role": "assistant",
+          "content": "人智交融创新篇，  \n工巧技艺谱华年。  \n大展宏图前景阔，  \n有志竟成梦终圆。  \n可期未来科技盛，  \n为民造福永绵延。",
+          "finish_reason": "stop"
+        }
+      ],
+      "operations": [
+        {
+          "time": 1744387852849,
+          "parent": "1",
+          "chat_config": {
+            "model": "toc-prod-data-produce-step2-ppo-2302-b2303-r2302-1205",
+            "max_tokens": 3072,
+            "temperature": 0.5
+          },
+          "is_prompt_modified": false,
+          "is_response_modified": true,
+          "response_modified_type": "delete_response",
+          "common_prefix_length": -1,
+          "operator": "generate_new",
+          "is_new_generated": true,
+          "on_policy": true
+        }
+      ],
+      "annotate": {
+        "is_good": null
+      }
+    },
+    "3": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "写藏头诗：\n人工智能，大有可为"
+        },
+        {
+          "role": "assistant",
+          "content": "人智交融创新篇，  \n工巧技艺谱华年。  \n智启未来无限景，  \n能展宏图大有天。  \n大势所趋迎挑战，  \n有志之士共登攀。  \n可期盛世同描绘，  \n为国为民谱新篇。",
+          "finish_reason": "stop"
+        }
+      ],
+      "operations": [
+        {
+          "time": 1744387857971,
+          "parent": "2",
+          "chat_config": {
+            "model": "toc-prod-data-produce-step2-ppo-2302-b2303-r2302-1205",
+            "max_tokens": 3072,
+            "temperature": 0.5
+          },
+          "is_prompt_modified": false,
+          "is_response_modified": true,
+          "response_modified_type": "bifurcation",
+          "common_prefix_length": 22,
+          "operator": "continue_with_chosen",
+          "on_policy": true,
+          "continue_with_chosen": {
+            "token": "智",
+            "logprob": -1.151188611984253,
+            "bytes": [
+              230,
+              153,
+              186
+            ]
+          },
+          "rejected_token": {
+            "delta": {
+              "content": "大"
+            },
+            "logprobs": {
+              "content": [
+                {
+                  "token": "大",
+                  "logprob": -0.6735121607780457
+                }
+              ]
+            },
+            "tokenIndex": 20
+          }
+        }
+      ],
+      "annotate": {
+        "is_good": true
+      }
+    },
+    "4": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "写藏头诗：\n人工智能，大有可为"
+        },
+        {
+          "role": "assistant",
+          "content": "人智相融创新篇，\n工巧思源汇百川。\n智启未来无限景，\n能担重任谱宏篇。\n大展宏图今朝始，\n有志竟成梦可圆。\n可期科技辉煌路，\n为国争光永向前。",
+          "finish_reason": "stop"
+        }
+      ],
+      "operations": [
+        {
+          "time": 1744387870165,
+          "parent": "3",
+          "chat_config": {
+            "model": "toc-prod-data-produce-step2-ppo-2302-b2303-r2302-1205",
+            "max_tokens": 3072,
+            "temperature": 0.5
+          },
+          "is_prompt_modified": false,
+          "is_response_modified": true,
+          "response_modified_type": "delete_response",
+          "common_prefix_length": -1,
+          "operator": "generate_new",
+          "is_new_generated": true,
+          "on_policy": true
+        }
+      ],
+      "annotate": {
+        "is_good": null
+      }
+    }
+  },
+  "version": "2.0",
+  "uuid": "2025-04-12_00-10-44.539",
+  "hash_map": {},
+  "deleted_dialogs": {},
+  "update_time": 1744387916022,
+  "cache_tree": {
+    "compressed_type": "lz-string-base64",
+    "compressed": "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"
+  }
+}
