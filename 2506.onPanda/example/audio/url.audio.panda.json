@@ -7,7 +7,7 @@
           "content": [{ 
               "type": "audio_url", 
               "audio_url": { 
-                "url": "http://out.diyer22.com:9000/on-panda-example/audio/mp3/common_saying_small.mp3", 
+                "url": "https://yl-data.github.io/2506.onPanda/example/audio/mp3/xyj%E8%A5%BF%E6%B8%B8%E8%AE%B0%E7%AC%91%E8%AF%9D.mp3", 
                 "format": "mp3" 
               }
           }]
